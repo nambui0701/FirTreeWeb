@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+    * {box-sizing: border-box;}
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+.topnav a {
+  display: block;
+  color: black;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+.topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+    
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+.img{
+    max-width: 100%;
+    max-width: 100%;
+}
+.landscape{
+    height: 60px;
+    width: 90px ;
+}
+.logo{
+    grid-column: 1 / 2;
+}
+.search {
+  grid-column: 2 / 4;
+}
+.login {
+    grid-column: 4 / 6;
+}
+.foodpic{
+   grid-row: 4 / 6;
+}
+.topheader{
+    grid-column: 1/6;
+}
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="logo"><img src="/Users/buikhanhnam/Desktop/Html/TheFirTree.jpg" style="width:100%"></div>
+  <div class="search">
+    <input type="text" placeholder="Search..." width=100%>
+  </div>
+  <div class="login">
+    <form action = "/action_page.pnp">
+        Username: 
+        <input type="text" name="firstname"><br>
+        Password: 
+        <input type="password" name="password"><br>
+        <input type="submit" name="submit" value="Log In">
+    </form>
+  </div>
+  <div class="type">
+      <div class="topnav">
+          <a class="active" href="#home">Home</a>
+    </div>
+  </div>
+  <div class="menu">
+      <div class="topnav">
+          <a href="#menu">Menu</a>
+    </div>
+  </div>
+  <div class="about">
+    <div class="topnav">
+        <a href="#about">About</a>
+    </div>
+  </div>
+  <div class="statistics">
+    <div class="topnav">
+        <a href="#statistics">Statistics</a>
+    </div>
+  </div>
+  <div class="management">
+    <div class="topnav">
+        <a href="#management">Management</a>
+    </div>
+  </div>
+<div class="foodpic">
+    Foodpic
+</div>
+</body>
+</html>
+
