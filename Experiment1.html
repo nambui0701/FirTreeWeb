@@ -11,38 +11,44 @@
     <title>Carousel Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/Users/buikhanhnam/Desktop/Html/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/Users/buikhanhnam/Desktop/Html/carousel.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
 
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#"><img src="/Users/buikhanhnam/Desktop/Html/WFSLogo.jpg" width="30" height="30"></a>
+        <a class="navbar-brand" href="#"><img src="/Users/buikhanhnam/Desktop/Html/WFSLogo.jpg" width="40" height="40"> The Fir Tree</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav mr-auto justify-content-center nav-fill">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+              <a class="nav-link text-danger" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Abous Us </a>
+              <a class="nav-link text-danger" href="#">Abous Us </a>
+            </li>
+            <li class="nav-item dropdown show">
+              <a class="nav-link btn dropdown-toggle text-danger font-weight-bold" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Order</a>
+              <div class="dropdown-menu bg-warning" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Breakfast</a>
+                <a class="dropdown-item" href="#">Drinks</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Order</a>
+              <a class="nav-link text-danger" href="#">Statistics</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Statistics</a>
+              <a class="nav-link text-danger" href="#">Management</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Management</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary" data-toggle="collapse" href="#loginpage" role="button" aria-expanded="false" aria-controls="loginpage"></a>Log In</a>
+              <a class="btn btn-primary" data-toggle="collapse" href="#login" role="buton" aira-expanded="false" aria-controls="login">
+                Log In
+              </a>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
@@ -52,6 +58,22 @@
         </div>
       </nav>
     </header>
+    <div class="collapse text-center mt-3" id="login">
+      <form class="form-signin">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <label for="useremail" class="sr-only">Email address</label>
+        <input type="email" id="useremail" class="formcontrol" placeholder="Email address" require autofocus>
+        <label for="userpassword" class="sr-only">Password</label>
+        <input type="password" id="userpassword" class="formcontrol" placeholder="Password" required>
+        <br>
+        <div class="checkbox mb-1">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+      </form>
+    </div>
 
     <main role="main">
 
@@ -63,32 +85,32 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+            <img class="first-slide" src="fries.jpg" alt="First slide">
             <div class="container">
-              <div class="carousel-caption text-left">
+              <div class="carousel-caption text-left text-dark">
                 <h1>Example headline.</h1>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Buy Now!</a></p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+            <img class="second-slide" src="hamburger.jpg" alt="Second slide">
             <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <div class="carousel-caption text-dark">
+                <h1>Double Cheese Burger</h1>
+                <p>This burger feels better than orgasm</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Get It!</a></p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+            <img class="third-slide" src="milkshake.jpg" alt="Third slide">
             <div class="container">
-              <div class="carousel-caption text-right">
-                <h1>One more for good measure.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <div class="carousel-caption text-right text-dark">
+                <h1>All Kind of milkshake you can think of</h1>
+                <p>It's better and cheaper everyday bro</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Yummm!</a></p>
               </div>
             </div>
           </div>
@@ -103,7 +125,6 @@
         </a>
       </div>
 
-
       <!-- Marketing messaging and featurettes
       ================================================== -->
       <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -113,21 +134,21 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <img class="rounded-circle" src="bltsandwich.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Food of the day</h2>
+            <p>Combining the sweet crisp of bacon with fresh tomato slices, the BLT is the manifestation much loved by Woodberry students. Case in point, Nam Bui:"I would skip every meal for a BLT."</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="econpic.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>The .99 experiment</h2>
+            <p>Analyzing the Fir Tree's sales, we discovers a real-life example of behavioral economics. In particular, sales went up 50% after we changed the price labels to end with .99</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <img class="rounded-circle" src="specialoffer.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>50% off on chocolate milkshake!</h2>
+            <p>Happy National Chocolate day! Limited Time Offer. Only for the first 20 people. Don't miss out!</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
@@ -139,11 +160,11 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Sports - J.D placed 2nd in MTB <span class="text-muted">Too fast, Too Dangerous</span></h2>
+            <p class="lead">The Biking Team had a wonderful trip today, crushing all other teams in Virginia...</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" data-src="mtb.jpg/500x500/auto" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -151,7 +172,7 @@
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <h2 class="featurette-heading">Featured article <span class="text-muted">See for yourself.</span></h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5 order-md-1">
@@ -188,11 +209,13 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="util.js"></script>
+    <script src="carousel.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../../../../assets/js/vendor/holder.min.js"></script>
+    <script>Window.jQuery || document.write('<script src="jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line -->
+    <script src="https://getbootstrap.com/assets/js/vendor/holder.min.js"></script>
   </body>
 </html>
